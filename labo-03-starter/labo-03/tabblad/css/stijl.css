@@ -2,7 +2,49 @@
 
 /* === tokens === */
 :root {
-
+  --color-bg: #ff816f;
+  --color-tab: #ffd500;
+  --color-card: #ffffff;
+  --color-black: #000000;
 }
 
+/* 2. Pagina-achtergrond en ademruimte rondom */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-bg);
+  padding: 5rem;              /* 5rem ademruimte rondom de pagina */
+  margin: 0;
+}
+
+/* 3. Het gele tabblad (h1) stylen */
+h1 {
+  background-color: var(--color-tab);
+  width: 15rem;               /* Exact 15rem breed */
+  padding: 0.75rem 1rem;      /* Binnenruimte voor de tekst */
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: normal;
+
+  /* Randen: zwarte rand van 0.25rem rondom, MAAR GEEN onderrand */
+  border: 0.25rem solid var(--color-black);
+  border-bottom: 0;           /* Zorgt dat het tabblad naadloos aansluit op de kaart */
+
+  /* Harde zwarte schaduw naar rechtsonder */
+  box-shadow: 0.25rem 0.25rem 0 var(--color-black);
+}
+
+/* 4. De witte kaart (h2) stylen */
+h2 {
+  background-color: var(--color-card);
+  width: 35rem;               /* Exact 35rem breed */
+  padding: 2rem;              /* Binnenruimte voor de titel */
+  margin: 0;
+  font-size: 2rem;
+
+  /* Zwarte rand van 0.25rem rondom */
+  border: 0.25rem solid var(--color-black);
+
+  /* Twee harde schaduwen gescheiden door een komma: 1 naar rechtsonder, 1 naar linksonder */
+box-shadow: 0.25rem 0.25rem 0 var(--color-black), -0.25rem 0.25rem 0 var(--color-black);
 /* === your rules === */
+}
