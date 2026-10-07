@@ -1,0 +1,66 @@
+/* stijl.css - labo 3, kleuren (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+  --color-tomato: tomato;
+  --color-orangered: orangered;
+  --color-coral: coral;
+  --color-lightsalmon: lightsalmon;
+  --color-darkorange: darkorange;
+}
+
+/* 2. Algemene styling en typografie */
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+/* 3. Lijst-reset: verwijder de insprong en bolletjes uit de browser */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 4. Elk lijstitem (li) krijgt precies de halve vensterhoogte */
+li {
+  height: 50vh;
+
+  /* Ademruimte om de tekst verticaal mooi in de band te verdelen */
+  padding-top: 10vh; 
+}
+
+/* 5. Styling voor de titels (h2) */
+h2 {
+  letter-spacing: 0.25rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+/* 6. Spatiëring tussen de drie kleurcodes in de paragraaf */
+.codes span {
+  margin: 0 0.5rem;
+  font-size: 1.4rem;
+}
+
+/* 7. Achtergrondkleur per li op basis van de class-namen uit je HTML */
+.tomato {
+  background-color: var(--color-tomato);
+}
+
+.orangered {
+  background-color: var(--color-orangered);
+}
+
+.coral {
+  background-color: var(--color-coral);
+}
+
+.lightsalmon {
+  background-color: var(--color-lightsalmon);
+}
+
+.darkorange {
+  background-color: var(--color-darkorange);
+}
