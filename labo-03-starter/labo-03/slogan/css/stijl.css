@@ -2,7 +2,52 @@
 
 /* === tokens === */
 :root {
+  --color-text: #282827;
+  --color-yellow: #fccc00;
+  --color-black: #000000;
+  --color-button-hover: #333333;
+  --color-white: #ffffff;
+}
 
+/* 2. De gehele body als kolom instellen */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--color-text);
+
+  /* Kolomafmetingen en centreren */
+  max-width: 40rem;         /* De kolom wordt nooit breder dan 40rem */
+  margin-top: 12rem;        /* Begint 12rem vanaf de bovenrand van het scherm */
+  margin-left: auto;        /* Automatische marge links en rechts centreert de hele kolom */
+  margin-right: auto;
+
+  text-align: center;       /* Centreert alle tekst BINNEN de kolom */
+  padding: 0 1rem;          /* Zorgt voor wat ademruimte op heel smalle schermen */
+  
+}
+
+/* 3. De geel gebogen streep onder het woord 'made' */
+span {
+  border-bottom: 0.25rem solid var(--color-yellow);
+  border-radius: 50%;       /* Geeft een lichte bolling/buiging aan de onderrand */
+  padding-bottom: 0.1rem;
+}
+
+/* 4. Styling voor de knop (de <a> link) */
+a {
+  display: inline-block;    /* HEEL BELANGRIJK: maakt van de inline-link een blokje zodat padding en margins werken */
+  background-color: var(--color-black);
+  color: var(--color-white);
+  text-decoration: none;    /* Haalt de standaard blauwe onderstreping van de link weg */
+  padding: 0.75rem 1.5rem;  /* Binnenruimte rondom de tekst */
+  border-radius: 2rem;      /* Zorgt voor sterk afgeronde (elliptische) hoeken */
+  margin-top: 1.5rem;       /* Duwt de knop naar beneden, weg van de tekst */
+  
+}
+
+/* 5. Hover & Focus toestand van de knop */
+a:hover,
+a:focus {
+  background-color: var(--color-button-hover); /* Wordt donkergrijs (#333333) zoals gevraagd in het HTML-commentaar */
 }
 
 /* === your rules === */

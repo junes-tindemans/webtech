@@ -35,13 +35,13 @@ li {
 h2 {
   letter-spacing: 0.25rem;
   margin-bottom: 1rem;
-  font-size: 3rem;
+  
 }
 
 /* 6. Spatiëring tussen de drie kleurcodes in de paragraaf */
 .codes span {
   margin: 0 0.5rem;
-  font-size: 1.4rem;
+  font-size: 0.9rem;
 }
 
 /* 7. Achtergrondkleur per li op basis van de class-namen uit je HTML */
